@@ -1,0 +1,38 @@
+.card_transacoes .card_transacao{
+    padding: 7px 0 15px 10px;
+    margin-right: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    max-width: 98%;      /* limite da largura da coluna */
+    white-space: normal;   /* permite quebra de linha */
+    word-wrap: break-word; /* quebra palavras grandes */
+}
+
+.card_transacao > h1 {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.card_transacao > h2 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.card_transacoes .card_transacao > p {
+    font-weight: normal;
+    font-size: 16px;
+    width: 350px;
+    white-space: nowrap;        /* Mantém o texto em uma linha */
+    overflow: hidden;           /* Esconde o texto que passar do limite */
+    text-overflow: ellipsis;    /* Adiciona "..." */
+}
+
+@media (max-width: 1740px) {
+    .card_transacoes .card_transacao > p {
+    width: 700px;
+    white-space: normal;
+    overflow: visible;
+    text-overflow: clip;
+}
+}
